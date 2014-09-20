@@ -74,7 +74,7 @@
         cell.textLabel.text = @"Another Section";
         cell.backgroundColor = [UIColor blueColor];
     } else {
-        cell.textLabel.text = @"Cell %i", indexPath.row;
+        cell.textLabel.text = [NSString stringWithFormat:@"Cell %i", indexPath.row];
         cell.backgroundColor = [UIColor yellowColor];
     }
     return cell;
